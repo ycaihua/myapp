@@ -1,9 +1,11 @@
 """Tests for myapp.main."""
 
+from unittest.mock import patch
 from myapp.main import main
 
 
 def test_main(capsys):
-    main()
+    with patch("uvicorn.run"):
+        main()
     captured = capsys.readouterr()
-    assert "Hello from myapp!" in captured.out
+    assert "Starting myapp API server" in captured.out

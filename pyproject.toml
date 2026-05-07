@@ -4,10 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "myapp"
-version = "0.1.0"
-description = "A Python application"
+version = "0.2.0"
+description = "A Python web application with REST API"
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0",
+    "sqlalchemy>=2.0.0",
+    "pydantic[email]>=2.0.0",
+    "httpx>=0.27.0",
+]
 
 [project.scripts]
 myapp = "myapp.main:main"
