@@ -14,3 +14,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial project setup with `pyproject.toml`
 - `myapp` CLI entry point
 - pytest test suite
+
+[Unreleased]: https://github.com/ycaihua/myapp/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/ycaihua/myapp/releases/tag/v0.1.0
